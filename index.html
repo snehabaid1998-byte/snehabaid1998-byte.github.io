@@ -855,29 +855,29 @@
   <div class="section wrap" id="work-anchor">
     <p class="label-sm">Selected work</p>
     <div class="palette-key reveal" aria-hidden="true">
-      <span class="pk-item" style="--pk:var(--rise);">01 Rise Connect</span>
-      <span class="pk-item" style="--pk:var(--btw);">02 Bengaluru Tech Week</span>
+      <span class="pk-item" style="--pk:var(--btw);">01 Bengaluru Tech Week</span>
+      <span class="pk-item" style="--pk:var(--rise);">02 Rise Connect</span>
       <span class="pk-item" style="--pk:var(--wispr);">03 Wispr Flow Concepts</span>
       <span class="pk-item" style="--pk:var(--mumme);">04 MUM.me</span>
       <span class="pk-item" style="--pk:var(--urbaneden);">05 Urban Eden</span>
       <span class="pk-item" style="--pk:var(--diamond);">06 Diamond Centre Wales</span>
     </div>
     <div class="work-grid">
-      <a class="work-card reveal" href="#rise" data-nav="rise">
-        <div class="work-bar" style="background:var(--rise);"></div>
-        <div class="work-body">
-          <div class="work-top"><div class="work-kicker">Case study 01 &middot; Self-directed concept</div><div class="work-badge" style="color:var(--rise);"><svg class="icon"><use href="#i-nodes"/></svg></div></div>
-          <div class="work-title">Rise Connect</div>
-          <p class="work-desc">Mapping four stakeholders onto one coordination system, sketched in the first three days of a two-week trial.</p>
-          <div class="work-link">View case study <svg class="icon"><use href="#i-arrow-r"/></svg></div>
-        </div>
-      </a>
       <a class="work-card reveal" href="#btw" data-nav="btw">
         <div class="work-bar" style="background:var(--btw);"></div>
         <div class="work-body">
-          <div class="work-top"><div class="work-kicker">Case study 02 &middot; Freelance / volunteer</div><div class="work-badge" style="color:var(--btw);"><svg class="icon"><use href="#i-ticket"/></svg></div></div>
+          <div class="work-top"><div class="work-kicker">Case study 01 &middot; Freelance / volunteer</div><div class="work-badge" style="color:var(--btw);"><svg class="icon"><use href="#i-ticket"/></svg></div></div>
           <div class="work-title">Bengaluru Tech Week</div>
           <p class="work-desc">A five-role product system, attendee, host, participant, and volunteer, prototyped end to end for a real city tech event.</p>
+          <div class="work-link">View case study <svg class="icon"><use href="#i-arrow-r"/></svg></div>
+        </div>
+      </a>
+      <a class="work-card reveal" href="#rise" data-nav="rise">
+        <div class="work-bar" style="background:var(--rise);"></div>
+        <div class="work-body">
+          <div class="work-top"><div class="work-kicker">Case study 02 &middot; Self-directed concept</div><div class="work-badge" style="color:var(--rise);"><svg class="icon"><use href="#i-nodes"/></svg></div></div>
+          <div class="work-title">Rise Connect</div>
+          <p class="work-desc">Mapping four stakeholders onto one coordination system, sketched in the first three days of a two-week trial.</p>
           <div class="work-link">View case study <svg class="icon"><use href="#i-arrow-r"/></svg></div>
         </div>
       </a>
@@ -950,7 +950,7 @@
 <section class="view cs-view" id="view-rise" data-view="rise" data-title="Rise Connect">
   <div class="cs-wrap cs-top">
     <a class="cs-back" href="#hub" data-nav="hub"><svg class="icon"><use href="#i-back"/></svg>Back to portfolio</a>
-    <p class="cs-kicker">Case study 01 &middot; Self-directed concept</p>
+    <p class="cs-kicker">Case study 02 &middot; Self-directed concept</p>
     <h1 class="cs-h1" tabindex="-1">Rise Connect</h1>
     <p class="cs-dek">Mapping four stakeholders onto one system, in the first three days of a two-week trial.</p>
 
@@ -1143,7 +1143,7 @@
 <section class="view cs-view" id="view-btw" data-view="btw" data-title="Bengaluru Tech Week">
   <div class="cs-wrap cs-top">
     <a class="cs-back" href="#hub" data-nav="hub"><svg class="icon"><use href="#i-back"/></svg>Back to portfolio</a>
-    <p class="cs-kicker">Case study 02 &middot; Freelance / volunteer</p>
+    <p class="cs-kicker">Case study 01 &middot; Freelance / volunteer</p>
     <h1 class="cs-h1" tabindex="-1">Five roles, <em style="font-style:italic; color:var(--cs-accent);">one</em> system, Bengaluru Tech Week</h1>
     <p class="cs-dek">A shared product system I designed, solo, for a real multi-day city tech event: covering the general attendee, the host running sessions, the registered participant, and the volunteer crew, all from one set of tokens and components.</p>
 
@@ -2067,7 +2067,7 @@
     var dot = document.querySelector('.crumb-dot');
     if (dot) dot.style.background = 'var(' + (routeColorVar[route] || '--accent') + ')';
 
-    var caseRoutes = ['rise','btw','wispr','mumme','urbaneden','diamond'];
+    var caseRoutes = ['btw','rise','wispr','mumme','urbaneden','diamond'];
     var sheetEl = document.getElementById('sheet-label');
     if (sheetEl) {
       var idx = caseRoutes.indexOf(route);
